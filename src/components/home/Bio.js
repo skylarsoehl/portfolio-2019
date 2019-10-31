@@ -1,5 +1,9 @@
 import React from "react"
 import * as self from '../../images/bio/self.jpg'
+import * as githubIcon from '../../images/social-icons/github.svg'
+import * as igIcon from '../../images/social-icons/instagram.svg'
+import * as linkedInIcon from '../../images/social-icons/linkedIn.svg'
+import * as dribbleIcon from '../../images/social-icons/dribble.svg'
 
 const Bio = () => {
     return (
@@ -24,6 +28,29 @@ const Bio = () => {
 
                 <p>During my downtime I like to paint, read in the Boston Public Gardens, loiter in museums, explore craft breweries, go to concerts, surf (on the log), and listen to Fugazi’s Instrument on repeat</p>
             </div>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src={githubIcon} />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ssoehl.design/" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src={igIcon} />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/skylarsoehl/" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src={linkedInIcon} />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dribbble.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
+                        <img class="icon" src={dribbleIcon} />
+                    </a>
+                </li>
+            </ul>
 
 
         </div>
