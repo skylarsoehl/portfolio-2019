@@ -5,7 +5,7 @@ const Work = () => {
     return (
         <div>
             <div>
-                <span>01</span>
+                <span>02</span>
             </div>
             <div>
                 <h2>SEL</h2>
