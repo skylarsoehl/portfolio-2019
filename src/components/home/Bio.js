@@ -25,9 +25,6 @@ const Bio = () => {
                 <p>During my downtime I like to paint, read in the Boston Public Gardens, loiter in museums, explore craft breweries, go to concerts, surf (on the log), and listen to Fugazi’s Instrument on repeat</p>
             </div>
 
-            <div>
-                
-            </div>
 
         </div>
     )
