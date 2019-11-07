@@ -58,10 +58,6 @@ const Bio = () => {
                 
             </div>
 
-            <img src={end}></img>
-
-
-
         </div>
     )
 }

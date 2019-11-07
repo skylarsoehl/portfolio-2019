@@ -19,12 +19,18 @@ const SiteTitle = styled.div`
     bottom: 97.82%;
 `;
 
+const FooterImage = styled.img`
+    display: block;
+    margin: 20% auto;
+    width: 50%;
+`;
+
 const Layout = (props) => {
     return (
         <SiteContainer>
             <SiteTitle>SKYLAR SOEHL</SiteTitle>
             {props.children}
-            <img src={theEnd} alt='This is the end of the page.'></img>
+            <FooterImage src={theEnd} alt='This is the end of the page.'></FooterImage>
         </SiteContainer>
     )
 }
