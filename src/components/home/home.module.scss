@@ -1,9 +1,8 @@
 
 
-.gridCol1#numeral {
-    position: relative;
-    left: 241px;
-    top: 148px;
+.numeral {
+    margin-left: 15rem;
+    top: 180px;
     font-weight: 500;
 }
 
@@ -11,25 +10,15 @@
 .container {
     margin-left: 43px;
     margin-right: 200px;
+    margin-top: 5rem;
+    margin-bottom: 25rem;
 }
 
-.gridCol2#intro {
-    position: relative;
-    top: 90px;
-    left: 377px;
-    margin-left: 10px;
-    padding-right: 7.5em;
+.intro {
     font-weight: 500;
     font-size: 55px;
     line-height: 72px;
 }
 
-.gridCol1 {
-    margin-right: 73px;
-}
+    
 
-.gridCol2 {
-    left: 377px;
-    margin-left: 73px;
-    margin-right: 55px;
-}

@@ -14,7 +14,7 @@ const SiteTitle = styled.div`
     left: 3%;
     right: 53.96%;
     top: 7%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 `;
 
 const FooterImage = styled.img`
