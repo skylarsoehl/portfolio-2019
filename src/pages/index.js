@@ -5,6 +5,7 @@ import Work from "../components/home/SelectedWork"
 import Bio from "../components/home/Bio"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ArtPhoto from "../components/home/ArtPhoto";
+import '../components/layout.scss';
 
 const IndexPage = () => {
     return (

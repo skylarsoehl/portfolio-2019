@@ -26,22 +26,22 @@ const Bio = () => {
             <ul>
                 <li>
                     <a href="https://github.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
-                        <img class="icon" src={githubIcon} />
+                        <img  src={githubIcon} />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/ssoehl.design/" target="_blank" rel="noopener noreferrer">
-                        <img class="icon" src={igIcon} />
+                        <img  src={igIcon} />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/skylarsoehl/" target="_blank" rel="noopener noreferrer">
-                        <img class="icon" src={linkedInIcon} />
+                        <img  src={linkedInIcon} />
                     </a>
                 </li>
                 <li>
                     <a href="https://dribbble.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
-                        <img class="icon" src={dribbleIcon} />
+                        <img src={dribbleIcon} />
                     </a>
                 </li>
             </ul>
