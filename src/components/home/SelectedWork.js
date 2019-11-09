@@ -11,11 +11,12 @@ import Container from "../../elements/Container";
 
 const PorfolioIndex = styled.ul`
     list-style: none;
-    font-size: 36px;
+    font-size: 50px;
 `;
 
 const PortfolioItem = styled.span`
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 500;
     margin-right: 2em;
 `;
 
