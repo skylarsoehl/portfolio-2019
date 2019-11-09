@@ -1,6 +1,10 @@
 import React, { Profiler } from 'react'
 import Layout from '../../components/layout'
-import { Row, Col, Grid } from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
+import ColItem1 from '../../elements/ColItem1'
+import ColItem2 from '../../elements/ColItem2'
+import H2 from '../../elements/H2'
+import H3 from '../../elements/H3'
 import * as arrow from '../../images/down-arrow.svg'
 import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSpreads.pdf'
 
@@ -9,13 +13,26 @@ const ButterPage = () => {
     const imagePath = name => images(name, true)
     return (
         <Layout>
-            <div>
-                <h3>DIS</h3>
-                <h3>COV</h3>
-                <h3>ER</h3>
+            <ColItem2>
+                <H3 className={homeStyles.titleTopOffset}>DIS</H3>
+            </ColItem2>
+
+            <ColItem1>
+                <H3 className={homeStyles.titleMiddleOffset}>COV</H3>
+            </ColItem1>
+
+            <ColItem2>
+                <H3>ER</H3>
+            </ColItem2>
+
+            <ColItem2>
+                <H2 className={homeStyles.titleTopOffset}>Butter</H2>
+            </ColItem2>
+
+
                 <h2>BUTTER</h2>
                 <img src={imagePath('./NashvilleCoffee.png')} alt='Abstract mosaic illustration with brown, dark forest green, salmon pink, and light green colors'></img>
-            </div>
+
             <div>
                 <Row>
                     <Col>

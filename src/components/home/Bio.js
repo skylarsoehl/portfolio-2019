@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import homeStyles from '.././home/home.module.scss'
+import SectionTitle from '../home/SectionTitle'
 import ColItem2 from '../../elements/ColItem2'
 import ColItem1 from '../../elements/ColItem1'
 import H2 from '../../elements/H2'
@@ -32,17 +33,12 @@ const Bio = () => {
                 <p className={homeStyles.numeral}>04</p>
             </ColItem1 >
 
-            <ColItem2>
-                <H2 className={homeStyles.titleTopOffset}>WHO</H2>
-            </ColItem2>
-
-            <ColItem2>
-                <H2 className={homeStyles.titleMiddleOffset}>IS</H2>
-            </ColItem2>
-
-            <ColItem2>
-                <H2>SHE</H2>
-            </ColItem2>
+            <SectionTitle
+            titleTop="WHO"
+            titleMiddle="IS"
+            titleBottom="SHE"
+            smallTitle=""
+            />
                 
             <ColItem1>
                 <StyledImage src={self} alt='This is a black and white (slighty out of focus) photo of myself I took on my phone. I am a woman with shoulder-length dark brown hair. I am very close to the camera with my phone covering half of my face.'>
