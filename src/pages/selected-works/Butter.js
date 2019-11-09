@@ -7,6 +7,7 @@ import PortfolioContainer from '../../elements/PortfolioContainer'
 import Overview from '../../components/portfolio/Overview'
 import SideTitle from '../../components/SideTitle'
 import GridPhotoThree from '../../components/GridPhotoThree'
+import GridPhotoTwo from '../../components/GridPhotoTwo'
 import P from '../../elements/P'
 import * as arrow from '../../images/down-arrow.svg'
 import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSpreads.pdf'
@@ -36,7 +37,7 @@ const Wrapper = styled.div`
 
 `;
 
-const Personas = styled.img`
+const ImgSingle = styled.img`
     width: 47.375rem;
 `;
 
@@ -132,34 +133,38 @@ const ButterPage = () => {
                     In the early stages of brand development, the team created personas which allowed us to intentionally direct our work, develop empathy throughout our interface, and stay on track with intended users. This exercise gave both the team and our client a clear picture of the target user. Once we developed a more concrete understanding of Butter’s brand voice and target audience, the next step was to dive into color, type, and logo explorations.
                 </P>
                         
-                <Personas src={imagePath('./ButterPersonas.png')}></Personas>
+                <ImgSingle src={imagePath('./ButterPersonas.png')}></ImgSingle>
 
                 <P>
                     For colors, we chose a mix of warm and cool earth-toned neutrals to help convey Butter’s friendly and chic personality. We chose PT Serif as our header font for bold, clean look and humanistic terminals which give a sophisticated and playful feel. To convey Butter’s more functional and informative size we chose Muli, a minimalistic sans serif.
                 </P>
-                <Row>
-                    <Col>
-                        <img src={imagePath('./butter_colors.jpg')}></img>
-                    </Col>
-                    <Col>
-                        <img src={imagePath('./Butter_type.png')}></img>
-                    </Col>
-                </Row>
+                </PortfolioContainer>
+                <GridPhotoTwo 
+                src1={imagePath('./butter_colors.jpg')}
+                alt1=""
+                caption1=""
+                src2={imagePath('./Butter_type.png')}
+                alt2=""
+                caption2=""
+                />
+
+                <PortfolioContainer>
                 <P>
                     Originally, the title of our client’s concept was Mend (short for recommend). In our initial logo sketches, we explored the ideas relating to travel, mark-making, and quotes. However, one month into the project, our client announced the need for a product name change
                 </P>
                 <P>
                     Working closely with our client, we explored new names for the company, product, and blog. Eventually, the client chose to continue the branding and product work with the name Butter (a catchy and obscure reference to a fictional elite restaurant). The final logo design combines our client’s desire for the use of organic shapes with a literal interpretation of butter.
                 </P>
-                <Row>
-                    <Col>
-                        <img src={imagePath('./logos_initial-05.jpg')}></img>
-                    </Col>
-                    <Col>
-                        <img src={imagePath('./ButterLogos-Full.png')}></img>
-                    </Col>
-                </Row>
-            </PortfolioContainer>
+                </PortfolioContainer>
+
+            <GridPhotoTwo
+                src1={imagePath('./logos_initial-05.jpg')}
+                alt1=""
+                caption1=""
+                src2={imagePath('./ButterLogos-Full.png')}
+                alt2=""
+                caption2=""
+            />
 
             <PortfolioContainer>
                 <h5>SITE ARCHITECTURE &#38; TECH STACK</h5>
@@ -169,13 +174,12 @@ const ButterPage = () => {
                 <P>
                     Keeping this in mind, the dev team opted to use TakeShape, a headless CMS. Originally we planned to use JAM stack to create the static marketing site using the recommended stack - Takeshape with GraphQL and React.js front-end, hosted via Nelify. However, after speaking with Scout’s Technology Director and TakeShape’s CEO and CTO about the needs our project, we decided to use HTML, SCCS, and Javascript(E6) for our front-end stack in order to simplify our process.
                 </P>
-                <Row>
-                    <img src={imagePath('./iaHomeFocusedv2_SS.jpg')}></img>
-                </Row>
-                <Row>
-                    <img src={imagePath('./site_map_final.jpg')}></img>
-                </Row>
+                <ImgSingle src={imagePath('./iaHomeFocusedv2_SS.jpg')}></ImgSingle>
+
+                <ImgSingle src={imagePath('./site_map_final.jpg')}></ImgSingle>
             </PortfolioContainer>
+        
+
             <PortfolioContainer>
                 <h5>WIREFRAME EVOLUTION</h5>
                 <P>
