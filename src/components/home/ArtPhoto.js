@@ -1,36 +1,27 @@
 import React from "react"
-import homeStyles from '.././home/home.module.scss'
+import SideTitle from '../SideTitle'
+import SectionTitle from '../home/SectionTitle'
 import ColItem2 from '../../elements/ColItem2'
-import ColItem1 from '../../elements/ColItem1'
-import H2 from '../../elements/H2'
+import P from '../../elements/P'
+import Container from "../../elements/Container"
 
 
 const ArtPhoto = () => {
     return (
-        <div className={homeStyles.container}>
-            <ColItem1>
-                <p className={homeStyles.numeral}>03</p>
-            </ColItem1 >
+        <Container>
+            <SideTitle title="03" />
 
-            <ColItem2>
-                <H2 className={homeStyles.titleTopOffset}>FEA</H2>
-            </ColItem2>
-
-            <ColItem2>
-                <H2 className={homeStyles.titleMiddleOffset}>TUR</H2>
-            </ColItem2>
-
-            <ColItem2>
-                <H2>ED</H2><span className={homeStyles.titleSmall}>MEDIA</span>
-            </ColItem2>
-
-            <div>
-                <p>************************</p>
-                <p>Carosuel goes here.</p>
-                <p>************************</p>
+            <SectionTitle
+            titleTop="FEA"
+            titleMiddle="TUR"
+            titleBottom="ED"
+            smallTitle="MEDIA"
+            />
             
-                </div>
-        </div>
+            <ColItem2>
+            <P>COMING SOON</P>
+            </ColItem2>
+        </Container>
     )
 }
 export default ArtPhoto

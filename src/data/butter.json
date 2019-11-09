@@ -1,0 +1,55 @@
+{ 
+    "data": {
+        "basicInfo": [
+            {
+                "categories": [
+                    "Web Design",
+                    "Brand Identity",
+                    "Interaction Design",
+                    "UI Design"
+                ]
+            },
+            {
+                "role": "Developer"
+            },
+            {
+                "date": "January 2019 – April 2019"
+            }
+        ],
+        "subtitle": "A platform that curates thoughtful recommendations for locals and quality-oriented travelers who want to discover better places in an era of information overload.",
+        "blurb": "During the spring semester of 2019 I worked as a developer for Scout, Northeastern’s student-led design studio. Scout was engaged in the earliest stages of the project; our objective was to create a brand identity and responsive marketing site. The team helped our client build Butter (formerly Mend) from the bottom-up, defining target audience types, researching brand competitors, and developing the brand's personality. Butter served as my first-ever client project.",
+        "content": [
+            {
+                "title": "RESERACH &#38; DISCOVERY",
+                "paragraphs": [
+                    "Our team consisted of five members: one project lead, two designers, and two developers (including myself). For the first few weeks we spent time translating our client’s vision through a series of brainstorming exercises such as brand stars, personality levers, mood boards, the elevator pitch and more. Additionally, we also performed research into our client’s competitors and companies our client considered “brand adjacent,” like Airbnb and Away."
+                ]
+            },
+            {
+                "title": "LOGO &#38; BRAND DEVELOPMENT",
+                "paragraphs": [
+                    "In the early stages of brand development, the team created personas which allowed us to intentionally direct our work, develop empathy throughout our interface, and stay on track with intended users. This exercise gave both the team and our client a clear picture of the target user. Once we developed a more concrete understanding of Butter’s brand voice and target audience, the next step was to dive into color, type, and logo explorations.",
+                    "For colors, we chose a mix of warm and cool earth-toned neutrals to help convey Butter’s friendly and chic personality. We chose PT Serif as our header font for bold, clean look and humanistic terminals which give a sophisticated and playful feel. To convey Butter’s more functional and informative size we chose Muli, a minimalistic sans serif.",
+                    "Originally, the title of our client’s concept was Mend (short for recommend). In our initial logo sketches, we explored the ideas relating to travel, mark-making, and quotes. However, one month into the project, our client announced the need for a product name change",
+                    "Working closely with our client, we explored new names for the company, product, and blog. Eventually, the client chose to continue the branding and product work with the name Butter (a catchy and obscure reference to a fictional elite restaurant). The final logo design combines our client’s desire for the use of organic shapes with a literal interpretation of butter."
+                ]
+            },
+            {
+                "title": "SITE ARCHITECTURE &#38; TECH STACK",
+                "paragraphs": [
+                    "We created a few various paper wire-frame sketches that each highlighted different information. In the end, we chose to go with had a robust homepage with strong brand introduction and multiple call to actions.",
+                ]
+            },
+            {
+                "title": "FINAL PRODUCT",
+                "paragraphs": [
+                    "We launched the fully-functional Butter marketing site at the end of April 2019. We also completed a design system (brand guidelines and assets) for our client in order for future expansion with the development of a mobile app."
+                ]
+            },
+            {
+                "title": "BRAND BOOK"
+            }
+        ]
+
+    } 
+}

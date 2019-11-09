@@ -13,13 +13,13 @@ const SiteTitle = styled.div`
     font-size: 60px;
     left: 3%;
     right: 53.96%;
-    top: 7%;
+    margin-top: -3rem;
     margin-bottom: 15px;
 `;
 
 const FooterImage = styled.img`
     display: block;
-    margin: 20% auto;
+    margin: 45% auto;
     width: 50%;
 `;
 
