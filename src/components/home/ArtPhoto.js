@@ -1,6 +1,8 @@
 import React from "react"
 import SideTitle from '../SideTitle'
 import SectionTitle from '../home/SectionTitle'
+import ColItem2 from '../../elements/ColItem2'
+import P from '../../elements/P'
 import Container from "../../elements/Container"
 
 
@@ -16,13 +18,9 @@ const ArtPhoto = () => {
             smallTitle="MEDIA"
             />
             
-
-            <div>
-                <p>************************</p>
-                <p>Carosuel goes here.</p>
-                <p>************************</p>
-            
-                </div>
+            <ColItem2>
+            <P>COMING SOON</P>
+            </ColItem2>
         </Container>
     )
 }

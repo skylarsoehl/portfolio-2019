@@ -33,31 +33,47 @@ const StyledLink = styled(A)`
 `;
 
 const StyledImage = styled.img`
-  float:
-  margin-left: 17rem;
-  top: -200px;
-  max-width:45%;
+  margin-top: 46rem;
+  margin-left: -6.5rem;
+  max-width: 75%;
   height:auto;
 `;
+
+const ImageBg = styled.div`
+    position: relative;
+    width: 100 %; 
+    margin-bottom: 7rem;
+`;
+
+
+const WholeTitle = styled.div`
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100 %;
+`;
+
 
 const Bio = () => {
     return (
         <Container>
-            <SideTitle title="04" />
 
-            <SectionTitle
-            titleTop="WHO"
-            titleMiddle="IS"
-            titleBottom="SHE"
-            smallTitle=""
-            />
-                
-            <ColItem1>
-                <StyledImage src={self} alt='This is a black and white (slighty out of focus) photo of myself I took on my phone. I am a woman with shoulder-length dark brown hair. I am very close to the camera with my phone covering half of my face.'>
-                </StyledImage>
-            </ColItem1>
+            <ImageBg>
+                <ColItem2>
+                    <StyledImage src={self} alt='This is a black and white (slighty out of focus) photo of myself I took on my phone. I am a woman with shoulder-length dark brown hair. I am very close to the camera with my phone covering half of my face.'>
+                    </StyledImage>
+                </ColItem2>
 
-           
+                <WholeTitle>
+                    <SideTitle title="04" />
+                    <SectionTitle
+                        titleTop="WHO"
+                        titleMiddle="IS"
+                        titleBottom="SHE"
+                        smallTitle=""
+                    />
+                </WholeTitle>
+            </ImageBg>
 
             <ColItem2>
                 <P>My interest in web design and coding began in middle school out of a desire to make my Tumblr blog as cool as the blogs of the platform’s anonymous web-coding gurus, whose HTML + CSS tutorials I followed obsessively. Today, I continue to immerse myself in my love for all things web through tackling projects that deal with interaction design and front-end development.</P>  
