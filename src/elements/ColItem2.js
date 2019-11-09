@@ -9,7 +9,7 @@ const ColItem2 = styled.div`
   padding-left: 15.5rem;
   margin-left: 9.1875rem;
   margin-right: 23px;
-  top: 3rem;
+  top: 1rem;
 `;
 
 export default ColItem2;

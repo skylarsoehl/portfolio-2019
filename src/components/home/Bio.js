@@ -16,6 +16,20 @@ import Container from "../../elements/Container"
 
 const SocialLinks = styled.ul`
   list-style: none;
+  margin-left: 15rem;
+  margin-top: -8rem;
+`;
+
+const Icon = styled.img`
+    width: 42px;
+    margin-bottom: 2rem;
+`;
+
+const StyledLink = styled(A)`
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100px;
+    margin-top: 5rem;
 `;
 
 const StyledImage = styled.img`
@@ -43,39 +57,48 @@ const Bio = () => {
                 </StyledImage>
             </ColItem1>
 
-            <SocialLinks>
-                <li>
-                    <a href="https://github.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
-                        <img  src={githubIcon} />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/ssoehl.design/" target="_blank" rel="noopener noreferrer">
-                        <img  src={igIcon} />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/skylarsoehl/" target="_blank" rel="noopener noreferrer">
-                        <img  src={linkedInIcon} />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://dribbble.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
-                        <img src={dribbleIcon} />
-                    </a>
-                </li>
-            </SocialLinks>
+           
 
             <ColItem2>
                 <P>My interest in web design and coding began in middle school out of a desire to make my Tumblr blog as cool as the blogs of the platform’s anonymous web-coding gurus, whose HTML + CSS tutorials I followed obsessively. Today, I continue to immerse myself in my love for all things web through tackling projects that deal with interaction design and front-end development.</P>  
+             </ColItem2>
 
+             <ColItem2>
                 <P>I was born on Long Island and proud to be raised in a woman-ran household. As a Latinx woman with immigrant heritage, I am fiercely passionate about diversity in tech, accessibility on the web, and hope to one day become an example for what women of color can accomplish in this industry.</P>
+            </ColItem2>
 
+            <ColItem2>
                 <P>During my downtime I like to paint, read in the Boston Public Gardens, loiter in museums, explore craft breweries, go to concerts, surf (on the log), and listen to Fugazi’s Instrument on repeat</P>
+            </ColItem2>
 
-                <A href={resume} target="_blank">Résumé</A>
+            <ColItem1>
+                <SocialLinks>
+                    <li>
+                        <a href="https://github.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
+                            <Icon src={githubIcon} />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/ssoehl.design/" target="_blank" rel="noopener noreferrer">
+                            <Icon src={igIcon} />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/skylarsoehl/" target="_blank" rel="noopener noreferrer">
+                            <Icon src={linkedInIcon} />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/skylarsoehl" target="_blank" rel="noopener noreferrer">
+                            <Icon src={dribbleIcon} />
+                        </a>
+                    </li>
+                </SocialLinks>
+            </ColItem1>
 
-                <A href="mailto:skysoehl@gmail.com" target="_blank">Hit my line</A>
+            <ColItem2>
+                <StyledLink href={resume} target="_blank">Résumé</StyledLink>
+                <StyledLink href="mailto:skysoehl@gmail.com" target="_blank">Hit my line</StyledLink>
             </ColItem2>
 
         </Container>

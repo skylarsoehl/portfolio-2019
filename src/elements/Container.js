@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  margin: 0.9375rem auto;
+  margin: 8rem auto;
   flex-wrap: wrap;
 `;
 
