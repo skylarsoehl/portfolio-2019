@@ -17,7 +17,7 @@ WebFont.load({
 
 
 const Space = styled.div`
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
 `;
 
 const IndexPage = () => {

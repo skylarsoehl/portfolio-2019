@@ -8,8 +8,8 @@ import ColItem2 from '../../elements/ColItem2'
 
 const IntroSection = styled.p`
     font-weight: 500;
-    font-size: 55px;
-    line-height: 72px;
+    font-size: 60px;
+    line-height: 77px;
     
 `;
 
@@ -24,6 +24,7 @@ const Intro = () => {
                 <br></br>In my spare time, I run all things design for <br></br><A href="https://www.instagram.com/nuwomenintech/">NU Women in Tech</A>, take on freelance projects, and develop personal initiatives.
                 </IntroSection>
             </ColItem2>
+
         </Container>
     )
 }

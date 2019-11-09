@@ -16,7 +16,7 @@ import Container from "../../elements/Container"
 
 const SocialLinks = styled.ul`
   list-style: none;
-  margin-left: 15rem;
+  margin-left: 30rem;
   margin-top: -8rem;
 `;
 
@@ -29,7 +29,8 @@ const StyledLink = styled(A)`
     font-size: 64px;
     font-weight: 600;
     line-height: 100px;
-    margin-top: 5rem;
+    margin-top: 2.5rem;
+    display: block;
 `;
 
 const StyledImage = styled.img`

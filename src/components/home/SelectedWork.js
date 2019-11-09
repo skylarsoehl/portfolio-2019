@@ -19,6 +19,10 @@ const PortfolioItem = styled.span`
     margin-right: 2em;
 `;
 
+const Wrapper = styled(ColItem2)`
+    margin-top: 8rem;
+`;
+
 
 
 
@@ -34,7 +38,7 @@ const Work = () => {
             smallTitle="WORK"
             />
 
-            <ColItem2>
+            <Wrapper>
                 <PorfolioIndex>
                     <li><PortfolioItem>2.1</PortfolioItem><A href="/selected-works/Butter">Butter</A></li>
                     <li><PortfolioItem>2.2</PortfolioItem><A href="/selected-works/Nuwit">NUWIT</A></li>
@@ -43,7 +47,7 @@ const Work = () => {
                     <li><PortfolioItem>2.5</PortfolioItem><A href="/selected-works/Esfresco">Esfresco</A></li>
                     <li><PortfolioItem>2.6</PortfolioItem><A href="/selected-works/Etc">Etc</A></li>
                 </PorfolioIndex>
-            </ColItem2>
+            </Wrapper>
             
         </Container>
     )

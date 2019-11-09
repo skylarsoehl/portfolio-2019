@@ -5,12 +5,8 @@ import ColItem2 from '../../elements/ColItem2';
 import ColItem1 from '../../elements/ColItem1';
 
 
-const StyledTop = styled(H2)`
-    padding-top: 3rem;
-`;
-
 const StyledMiddle = styled(H2)`
-    margin-left: 17rem;
+    margin-left: 22rem;
 `;
 
 const StyledSmall = styled.span`
@@ -24,7 +20,7 @@ const SectionTitle = ({
     titleMiddle,
     titleBottom,
     smallTitle,
-    TitleTop = StyledTop,
+    TitleTop = H2,
     TitleMiddle = StyledMiddle,
     TitleBottom = H2,
     SmallTitle = StyledSmall
