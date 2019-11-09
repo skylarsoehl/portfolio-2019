@@ -1,13 +1,11 @@
 import React from "react"
 import styled from 'styled-components'
-import homeStyles from '../home/home.module.scss'
 import '../layout.scss';
 import A from '../../elements/A'
 import ColItem2 from '../../elements/ColItem2'
-import ColItem1 from '../../elements/ColItem1'
-import H2 from '../../elements/H2'
-import A from '../../elements/A'
+import SideTitle from '../SideTitle'
 import SectionTitle from '../home/SectionTitle'
+import Container from "../../elements/Container";
 
 
 
@@ -17,7 +15,8 @@ const PorfolioIndex = styled.ul`
 `;
 
 const PortfolioItem = styled.span`
-    margin-right: 4em;
+    font-size: 20px;
+    margin-right: 2em;
 `;
 
 
@@ -25,13 +24,14 @@ const PortfolioItem = styled.span`
 
 const Work = () => {
     return (
-        <div className={homeStyles.container}>
+        <Container>
+            <SideTitle title="02" />
             
             <SectionTitle 
             titleTop="SEL"
             titleMiddle="ECT"
             titleBottom="ED"
-            smallTitle="WORD"
+            smallTitle="WORK"
             />
 
             <ColItem2>
@@ -45,7 +45,7 @@ const Work = () => {
                 </PorfolioIndex>
             </ColItem2>
             
-        </div>
+        </Container>
     )
 }
 export default Work

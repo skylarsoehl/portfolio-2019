@@ -1,16 +1,13 @@
 import React from "react"
-import homeStyles from '.././home/home.module.scss'
-import ColItem2 from '../../elements/ColItem2'
-import ColItem1 from '../../elements/ColItem1'
+import SideTitle from '../SideTitle'
 import SectionTitle from '../home/SectionTitle'
+import Container from "../../elements/Container"
 
 
 const ArtPhoto = () => {
     return (
-        <div className={homeStyles.container}>
-            <ColItem1>
-                <p className={homeStyles.numeral}>03</p>
-            </ColItem1 >
+        <Container>
+            <SideTitle title="03" />
 
             <SectionTitle
             titleTop="FEA"
@@ -26,7 +23,7 @@ const ArtPhoto = () => {
                 <p>************************</p>
             
                 </div>
-        </div>
+        </Container>
     )
 }
 export default ArtPhoto

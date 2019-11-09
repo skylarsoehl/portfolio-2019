@@ -1,10 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
-import homeStyles from '.././home/home.module.scss'
 import SectionTitle from '../home/SectionTitle'
+import SideTitle from '../SideTitle'
 import ColItem2 from '../../elements/ColItem2'
 import ColItem1 from '../../elements/ColItem1'
-import H2 from '../../elements/H2'
 import P from '../../elements/P'
 import A from '../../elements/A'
 import * as self from '../../images/bio/self.jpg'
@@ -13,6 +12,7 @@ import * as igIcon from '../../images/social-icons/instagram.svg'
 import * as linkedInIcon from '../../images/social-icons/linkedIn.svg'
 import * as dribbleIcon from '../../images/social-icons/dribble.svg'
 import * as resume from '../../documents/skylar_soehl_resume.pdf'
+import Container from "../../elements/Container"
 
 const SocialLinks = styled.ul`
   list-style: none;
@@ -28,10 +28,8 @@ const StyledImage = styled.img`
 
 const Bio = () => {
     return (
-        <div className={homeStyles.container}>
-            <ColItem1>
-                <p className={homeStyles.numeral}>04</p>
-            </ColItem1 >
+        <Container>
+            <SideTitle title="04" />
 
             <SectionTitle
             titleTop="WHO"
@@ -70,25 +68,17 @@ const Bio = () => {
 
             <ColItem2>
                 <P>My interest in web design and coding began in middle school out of a desire to make my Tumblr blog as cool as the blogs of the platform’s anonymous web-coding gurus, whose HTML + CSS tutorials I followed obsessively. Today, I continue to immerse myself in my love for all things web through tackling projects that deal with interaction design and front-end development.</P>  
-            </ColItem2>
 
-            <ColItem2>
                 <P>I was born on Long Island and proud to be raised in a woman-ran household. As a Latinx woman with immigrant heritage, I am fiercely passionate about diversity in tech, accessibility on the web, and hope to one day become an example for what women of color can accomplish in this industry.</P>
-            </ColItem2>
 
-            <ColItem2>
                 <P>During my downtime I like to paint, read in the Boston Public Gardens, loiter in museums, explore craft breweries, go to concerts, surf (on the log), and listen to Fugazi’s Instrument on repeat</P>
+
+                <A href={resume} target="_blank">Résumé</A>
+
+                <A href="mailto:skysoehl@gmail.com" target="_blank">Hit my line</A>
             </ColItem2>
 
-            <ColItem2>
-                <A className={homeStyles.caseLinkSection} href={resume} target="_blank">Résumé</A>
-            </ColItem2>
-
-            <ColItem2>
-                <A className={homeStyles.caseLinkSection} href="mailto:skysoehl@gmail.com" target="_blank">Hit my line</A>
-            </ColItem2>
-
-        </div>
+        </Container>
     )
 }
 export default Bio

@@ -6,7 +6,7 @@ const ColItem1 = styled.div`
   justify-content: space-between;
   position: relative;
   top: 3rem;
-    
+  
 `;
 
 export default ColItem1;

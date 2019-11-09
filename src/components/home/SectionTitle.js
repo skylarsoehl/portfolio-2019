@@ -1,35 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
-import H2 from '../../elements/H2'
-import ColItem2 from '../../elements/ColItem2'
+import H2 from '../../elements/H2';
+import ColItem2 from '../../elements/ColItem2';
+import ColItem1 from '../../elements/ColItem1';
 
 
 const StyledTop = styled(H2)`
     padding-top: 3rem;
 `;
 
-const StyledBottom = styled(H2)`
-    margin-left: -10rem;
+const StyledMiddle = styled(H2)`
+    margin-left: 17rem;
 `;
 
 const StyledSmall = styled.span`
     font-size: 72px;
-    line-height: 210px;
-    padding-right: 15rem;
+    margin-left: 3rem;
 `;
 
 
-
-const StyledBottom
-
-const TitleSubtitle = ({
+const SectionTitle = ({
     titleTop,
     titleMiddle,
     titleBottom,
     smallTitle,
     TitleTop = StyledTop,
-    TitleMiddle = H2,
-    TitleBottom = StyledBottom,
+    TitleMiddle = StyledMiddle,
+    TitleBottom = H2,
     SmallTitle = StyledSmall
 }) => (
         <>
@@ -37,14 +34,16 @@ const TitleSubtitle = ({
                 <TitleTop>{titleTop}</TitleTop>
             </ColItem2>
 
-            <ColItem2>
+            <ColItem1>
                 <TitleMiddle>{titleMiddle}</TitleMiddle>
-            </ColItem2>
+            </ColItem1>
 
             <ColItem2>
-                <TitleBottom>{titleBottom}</TitleBottom><SmallTitle>{smallTitle}</SmallTitle>
+                <TitleBottom>{titleBottom}
+                    <SmallTitle>{smallTitle}</SmallTitle>
+                </TitleBottom>
             </ColItem2>
         </>
     );
 
-export default TitleSubtitle;
+export default SectionTitle;
