@@ -8,8 +8,8 @@ import ColItem2 from '../../elements/ColItem2'
 
 const IntroSection = styled.p`
     font-weight: 500;
-    font-size: 60px;
-    line-height: 77px;
+    font-size: 55px;
+    line-height: 72px;
     
 `;
 

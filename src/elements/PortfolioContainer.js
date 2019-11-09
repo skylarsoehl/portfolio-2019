@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import ColItem1 from './ColItem1';
+import ColItem2 from './ColItem2';
 
-const PortfolioContainer = styled(ColItem1)`
+const PortfolioContainer = styled(ColItem2)`
   display: flex;
-  width: 86vw;
+  width: 112vw;
   height: auto;
   box-sizing: border-box;
   margin: 0 auto;

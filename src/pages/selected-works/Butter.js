@@ -3,13 +3,13 @@ import Layout from '../../components/layout'
 import styled from 'styled-components'
 import { Row, Col } from 'react-bootstrap';
 import PortfolioTitle from '../../components/portfolio/PortfolioTitle'
+import PortfolioContainer from '../../elements/PortfolioContainer'
 import Overview from '../../components/portfolio/Overview'
 import SideTitle from '../../components/SideTitle'
 import P from '../../elements/P'
 import * as arrow from '../../images/down-arrow.svg'
 import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSpreads.pdf'
-import ColItem1 from '../../elements/ColItem1';
-import ColItem2 from '../../elements/ColItem2';
+
 
 const images = require.context('../../images/portfolio/Butter', true)
 const imagePath = name => images(name, true)
@@ -75,10 +75,12 @@ const ButterPage = () => {
             />
 
          
+                <PortfolioContainer>
                 <SideTitle>RESEARCH &#38; DISCOVERY</SideTitle>
                 <P>
                     Our team consisted of five members: one project lead, two designers, and two developers (including myself). For the first few weeks we spent time translating our client’s vision through a series of brainstorming exercises such as brand stars, personality levers, mood boards, the elevator pitch and more. Additionally, we also performed research into our client’s competitors and companies our client considered “brand adjacent,” like Airbnb and Away.
                 </P>
+                </PortfolioContainer>
                 <Row>
                     <Col>
                         <img src={imagePath('./UserJourneys.jpg')}></img>

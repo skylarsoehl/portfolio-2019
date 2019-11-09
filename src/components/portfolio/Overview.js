@@ -18,6 +18,11 @@ const BlurbStyled = styled.p`
     padding-right: 2rem;
 `;
 
+const Wrapper = styled.div`
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+`;
+
 
 const Overview = ({
     subtitle,
@@ -26,15 +31,16 @@ const Overview = ({
     Blurb = BlurbStyled,
 }) => (
         <>
-            <PortfolioContainer>
-                <Subtitle>{subtitle}</Subtitle>
-            </PortfolioContainer>
-            
-            <PortfolioContainer>
-                <Blurb>{blurb}</Blurb>
-            </PortfolioContainer>
-                
+        <Wrapper>
+                <PortfolioContainer>
+                    <Subtitle>{subtitle}</Subtitle>
+                </PortfolioContainer>
 
+                <PortfolioContainer>
+                    <Blurb>{blurb}</Blurb>
+                </PortfolioContainer>
+
+        </Wrapper>
         </>
     );
 
