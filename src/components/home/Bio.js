@@ -16,7 +16,7 @@ import Container from "../../elements/Container"
 
 const SocialLinks = styled.ul`
   list-style: none;
-  margin-left: 30rem;
+  margin-left: 20rem;
   margin-top: -8rem;
 `;
 

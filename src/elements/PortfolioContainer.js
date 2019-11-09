@@ -4,7 +4,7 @@ import ColItem2 from './ColItem2';
 
 const PortfolioContainer = styled(ColItem2)`
   display: flex;
-  width: 112vw;
+  width: 94vw;
   height: auto;
   box-sizing: border-box;
   margin: 0 auto;
