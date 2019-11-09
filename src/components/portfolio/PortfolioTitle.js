@@ -24,6 +24,8 @@ const NameStyled = styled(H2)`
 `;
 
 
+
+
 const PortfolioTitle = ({
     subtitleTop,
     subtitleMiddle,

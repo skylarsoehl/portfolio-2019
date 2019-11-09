@@ -1,5 +1,6 @@
 import React, { Profiler } from 'react'
 import Layout from '../../components/layout'
+import styled from 'styled-components'
 import { Row, Col } from 'react-bootstrap';
 import PortfolioTitle from '../../components/portfolio/PortfolioTitle'
 import Overview from '../../components/portfolio/Overview'
@@ -10,22 +11,43 @@ import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSprea
 import ColItem1 from '../../elements/ColItem1';
 import ColItem2 from '../../elements/ColItem2';
 
+const images = require.context('../../images/portfolio/Butter', true)
+const imagePath = name => images(name, true)
 
+const Wrapper = styled.div`
+  position: relative;
+  margin-top: 80px;
+  padding-bottom: 100px;
+  &:before {
+    content: ' ';
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    max-width: auto;
+    position: absolute;
+    left: 15%;
+    right: 0%;
+    top: 14.62%;
+    bottom: 14.46%;
+    background-image: url(${imagePath('./NashvilleCoffee.png')});
+    background-repeat: no-repeat;
+  }
+
+`;
 
 
 const ButterPage = () => {
-    const images = require.context('../../images/portfolio/Butter', true)
-    const imagePath = name => images(name, true)
     return (
         <Layout>
 
-            <PortfolioTitle
-                subtitleTop="DIS"
-                subtitleMiddle="CO"
-                subtitleBottom="VER"
-                name="BUTTER" />
-           
-            <img src={imagePath('./NashvilleCoffee.png')} alt='Abstract mosaic illustration with brown, dark forest green, salmon pink, and light green colors'></img>
+            <Wrapper>
+                <PortfolioTitle
+                    subtitleTop="DIS"
+                    subtitleMiddle="CO"
+                    subtitleBottom="VER"
+                    name="BUTTER" />
+            </Wrapper>
+
 
             <div>
                 <Row>
