@@ -18,9 +18,7 @@ import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSprea
 const images = require.context('../../images/portfolio/Butter', true)
 const imagePath = name => images(name, true)
 
-const Container = styled.div`
-    margin: 
-`;
+
 
 const Wrapper = styled.div`
   position: relative;
