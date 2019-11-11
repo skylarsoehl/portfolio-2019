@@ -9,6 +9,7 @@ import SideTitle from '../../components/SideTitle'
 import GridPhotoTwo from '../../components/GridPhotoTwo'
 import GridPhotoThree from '../../components/GridPhotoThree'
 import GridPhotoFour from '../../components/GridPhotoFour'
+import CatRoleDate from '../../components/portfolio/CatRoleDate'
 import P from '../../elements/P'
 import A from '../../elements/A'
 import * as arrow from '../../images/down-arrow.svg'
@@ -120,25 +121,13 @@ const ButterPage = () => {
                     name="BUTTER" />
             </Wrapper>
 
-            <GridWrapper>
-                <div>
-                    <p>Category</p>
-                    <p>Web Design</p>
-                    <p>Brand Identity</p>
-                    <p>Interaction Design</p>
-                    <p>UI Design</p>
-                </div>
-                <div>
-                    <p>Role</p>
-                    <p>Developer</p>
-                </div>
-                <div>
-                    <p>Date</p>
-                    <p>January 2019 – April 2019</p>
-                </div>
-            </GridWrapper>
+           <CatRoleDate 
+                categoryList={['Web Design', 'Brand Identity', 'Interaction Design', 'UI Design']}
+                roleList={['Developer']}
+                date="January 2019 &ndash; April 2019"
+       />
 
-       
+   
 
             <Overview
             subtitle="A platform that curates thoughtful recommendations for locals and quality-oriented travelers who want to discover better places in an era of information overload."
