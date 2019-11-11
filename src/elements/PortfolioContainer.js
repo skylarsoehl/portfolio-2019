@@ -7,7 +7,7 @@ const PortfolioContainer = styled(ColItem2)`
   width: 94vw;
   height: auto;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 5rem 0rem;
   flex-wrap: wrap;
 `;
 
