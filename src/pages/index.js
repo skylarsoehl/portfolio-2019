@@ -7,13 +7,7 @@ import Bio from "../components/home/Bio"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ArtPhoto from "../components/home/ArtPhoto";
 import '../components/layout.scss';
-import WebFont from 'webfontloader';
 
-WebFont.load({
-    typekit: {
-        id: 'ujc5bkl'
-    }
-});
 
 
 const Space = styled.div`
