@@ -11,3 +11,10 @@ import GridPhotoFour from '../../components/GridPhotoFour'
 import CatRoleDate from '../../components/portfolio/CatRoleDate'
 import P from '../../elements/P'
 import A from '../../elements/A'
+
+const Nuwit = () => {
+    return (
+        <div></div>
+    )
+}
+export default Nuwit
