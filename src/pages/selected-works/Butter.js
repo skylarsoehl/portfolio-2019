@@ -1,7 +1,6 @@
 import React, { Profiler } from 'react'
 import Layout from '../../components/layout'
 import styled from 'styled-components'
-import { Row, Col, Tab } from 'react-bootstrap';
 import PortfolioTitle from '../../components/portfolio/PortfolioTitle'
 import PortfolioContainer from '../../elements/PortfolioContainer'
 import Overview from '../../components/portfolio/Overview'
