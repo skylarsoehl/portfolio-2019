@@ -1,14 +1,11 @@
-import React from 'react';
+import 'react';
 import styled from 'styled-components';
-import ColItem2 from './ColItem2';
 
-const PortfolioContainer = styled(ColItem2)`
-  display: flex;
-  width: 94vw;
-  height: auto;
+const PortfolioContainer = styled.div`
+  width: 64vw;
   box-sizing: border-box;
-  margin: 0 auto;
-  flex-wrap: wrap;
+  padding-right: 15rem;
+  margin-top: 2.5rem;
 `;
 
  export default PortfolioContainer;
