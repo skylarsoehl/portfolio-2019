@@ -2,8 +2,7 @@ import 'react';
 import styled from 'styled-components';
 
 const ColItem1 = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: block;
   position: relative;
   top: 3rem;
   margin-bottom: 3rem;

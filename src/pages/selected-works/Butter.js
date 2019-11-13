@@ -1,8 +1,8 @@
 import React, { Profiler } from 'react'
 import Layout from '../../components/layout'
 import styled from 'styled-components'
-import PortfolioTitle from '../../components/portfolio/PortfolioTitle'
 import PortfolioContainer from '../../elements/PortfolioContainer'
+import PortfolioHero from '../../components/portfolio/PortfolioHero'
 import Overview from '../../components/portfolio/Overview'
 import SideTitle from '../../components/SideTitle'
 import GridPhotoTwo from '../../components/GridPhotoTwo'
@@ -17,29 +17,6 @@ import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSprea
 
 const images = require.context('../../images/portfolio/Butter', true)
 const imagePath = name => images(name, true)
-
-
-
-const Wrapper = styled.div`
-  position: relative;
-  margin-top: 80px;
-  padding-bottom: 100px;
-  &:before {
-    content: ' ';
-    z-index: -1;
-    width: 100%;
-    height: 60%;
-    max-width: auto;
-    position: absolute;
-    left: 15%;
-    right: 0%;
-    top: 14.62%;
-    bottom: 14.46%;
-    background-image: url(${imagePath('./NashvilleCoffee.png')});
-    background-repeat: no-repeat;
-  }
-
-`;
 
 const ImgSingle = styled.img`
     width: 47.375rem;
@@ -112,13 +89,13 @@ const ButterPage = () => {
     return (
         <Layout>
 
-            <Wrapper>
-                <PortfolioTitle
-                    subtitleTop="DIS"
-                    subtitleMiddle="CO"
-                    subtitleBottom="VER"
-                    name="BUTTER" />
-            </Wrapper>
+            <PortfolioHero
+                subtitleTop="DIS"
+                subtitleMiddle="CO"
+                subtitleBottom="VER"
+                name="BUTTER" 
+                imagePath={imagePath('./NashvilleCoffee.png')}/>
+          
 
            <CatRoleDate 
                 categoryList={['Web Design', 'Brand Identity', 'Interaction Design', 'UI Design']}
