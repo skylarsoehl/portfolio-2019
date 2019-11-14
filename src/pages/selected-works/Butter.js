@@ -1,13 +1,13 @@
-import React, { Profiler } from 'react'
+import React from 'react'
 import Layout from '../../components/layout'
 import styled from 'styled-components'
-import PortfolioContainer from '../../elements/PortfolioContainer'
+import Center from '../../elements/Center'
+import PortfolioContainer from '../../elements/portfolio/PortfolioContainer'
 import PortfolioHero from '../../components/portfolio/PortfolioHero'
 import Overview from '../../components/portfolio/Overview'
 import SideTitle from '../../components/SideTitle'
-import GridPhotoTwo from '../../components/GridPhotoTwo'
-import GridPhotoThree from '../../components/GridPhotoThree'
-import GridPhotoFour from '../../components/GridPhotoFour'
+import Grid from '../../components/portfolio/Grid'
+import Img from '../../components/Img'
 import CatRoleDate from '../../components/portfolio/CatRoleDate'
 import P from '../../elements/P'
 import A from '../../elements/A'
@@ -18,24 +18,6 @@ import * as butterBrandBook from '../../documents/portfolio/butterBrandBookSprea
 const images = require.context('../../images/portfolio/Butter', true)
 const imagePath = name => images(name, true)
 
-const ImgSingle = styled.img`
-    width: 47.375rem;
-    margin: 5rem auto;
-`;
-
-const GridWrapper = styled.div`
-    display:grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 5rem;
-    margin-bottom: 10rem;
-`;
-
-const GridWrapperDos = styled.div`
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-`;
 
 const Spread = styled.img`
   width: 562px;
@@ -69,13 +51,6 @@ const Arrow = styled.img`
     margin: 5rem auto;
 `;
 
-const ImgLarge = styled.img`
-    width: 1008px;
-    height: 532px;
-    display: block;
-    margin: 5rem auto;
-    object-fit: contain;
-`;
 
 const StyledLink = styled(A)`
     font-size: 48px;
@@ -110,7 +85,14 @@ const ButterPage = () => {
                 blurb="During the spring semester of 2019 I worked as a developer for Scout, Northeastern’s student-led design studio. Scout was engaged in the earliest stages of the project; our objective was to create a brand identity and responsive marketing site. The team helped our client build Butter (formerly Mend) from the bottom-up, defining target audience types, researching brand competitors, and developing the brand's personality. Butter served as my first-ever client project."
             />
 
-            <GridWrapperDos>
+            <Grid
+            numCol="2"
+            gapSize="0"
+            marginTop="0"
+            marginBottom="0"
+            marginLeft="0"
+            marginRight="0"
+            >
                 <SideTitle title="RESEARCH&nbsp;&amp; DISCOVERY"></SideTitle>
                 <PortfolioContainer>
 
@@ -118,23 +100,50 @@ const ButterPage = () => {
                         Our team consisted of five members: one project lead, two designers, and two developers (including myself). For the first few weeks we spent time translating our client’s vision through a series of brainstorming exercises such as brand stars, personality levers, mood boards, the elevator pitch and more. Additionally, we also performed research into our client’s competitors and companies our client considered “brand adjacent,” like Airbnb and Away.
                 </P>
                 </PortfolioContainer>
-            </GridWrapperDos>
-    
+            </Grid>
 
-                <GridPhotoThree
-                src1={imagePath('./UserJourneys.jpg')}
-                alt1="User Journey Explorations"
-                caption1="User Journey Explorations"
-                src2={imagePath('./moodBoards.jpg')}
-                alt2="Mood Boards"
-                caption2="Mood Boards"
-                src3={imagePath('./PersonalityLevers.jpg')}
-                alt3="Personality Levers"
-                caption3="Personality Levers"
+
+            <Grid
+                numCol="3"
+                gapSize="0"
+                marginTop="4rem"
+                marginBottom="4rem"
+                marginLeft="4rem"
+                marginRight="4rem"
+            >
+                <Img 
+                    src={imagePath('./UserJourneys.jpg')}
+                    alt="User Journey Explorations"
+                    caption="User Journey Explorations"
+                    width="21.875rem"
+                    height="16.25rem"
+                            />
+                <Img
+                    src={imagePath('./moodBoards.jpg')}
+                    alt="Mood Boards"
+                    caption="Mood Boards"
+                    width="21.875rem"
+                    height="16.25rem"
                 />
-                
-                <GridWrapperDos>
+                <Img
+                    src={imagePath('./PersonalityLevers.jpg')}
+                    alt="Personality Levers"
+                    caption="Personality Levers"
+                    width="21.875rem"
+                    height="16.25rem"
+                />
+            </Grid>
 
+            
+
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="LOGO&nbsp;&amp; BRAND&nbsp;DEVELOPMENT"></SideTitle>
 
                 <PortfolioContainer>
@@ -142,23 +151,53 @@ const ButterPage = () => {
                         In the early stages of brand development, the team created personas which allowed us to intentionally direct our work, develop empathy throughout our interface, and stay on track with intended users. This exercise gave both the team and our client a clear picture of the target user. Once we developed a more concrete understanding of Butter’s brand voice and target audience, the next step was to dive into color, type, and logo explorations.
                 </P>
 
-                    <ImgSingle src={imagePath('./ButterPersonas.png')}></ImgSingle>
+                   <Img
+                        src={imagePath('./ButterPersonas.png')}
+                        alt="Image of example personas we made"
+                        caption=""
+                        width="47.375rem"
+                        height="37.375rem"
+                   />
 
                     <P>
                         For colors, we chose a mix of warm and cool earth-toned neutrals to help convey Butter’s friendly and chic personality. We chose PT Serif as our header font for bold, clean look and humanistic terminals which give a sophisticated and playful feel. To convey Butter’s more functional and informative size we chose Muli, a minimalistic sans serif.
                 </P>
                 </PortfolioContainer>
-                    
-                </GridWrapperDos>
+            </Grid>
 
-                <GridPhotoTwo 
-                src1={imagePath('./butter_colors.jpg')}
-                alt1=""
-                src2={imagePath('./Butter_type.png')}
-                alt2=""
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="5rem"
+                marginBottom="5rem"
+                marginLeft="5rem"
+                marginRight="5rem"
+            >
+                <Img
+                    src={imagePath('./butter_colors.jpg')}
+                    alt="Final color decisions are (from left to right): white, soft salmon pink, terracotta brown, dark blue-green, and light sage green."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
                 />
+                <Img
+                    src={imagePath('./Butter_type.png')}
+                    alt="This image shows a type pairing for clients chosen fonts showing what the type would look like for the title, subtitle, and body text."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+            </Grid>
+                
 
-                <GridWrapperDos>
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></SideTitle>
                 <PortfolioContainer>
                     <P>
@@ -168,18 +207,40 @@ const ButterPage = () => {
                         Working closely with our client, we explored new names for the company, product, and blog. Eventually, the client chose to continue the branding and product work with the name Butter (a catchy and obscure reference to a fictional elite restaurant). The final logo design combines our client’s desire for the use of organic shapes with a literal interpretation of butter.
                 </P>
                 </PortfolioContainer>
-                </GridWrapperDos>
+            </Grid>
 
-            <GridPhotoTwo
-                src1={imagePath('./logos_initial-05.jpg')}
-                alt1=""
-                caption1=""
-                src2={imagePath('./ButterLogos-Full.png')}
-                alt2=""
-                caption2=""
-            />
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="5rem"
+                marginBottom="5rem"
+                marginLeft="5rem"
+                marginRight="5rem"
+            >
+                <Img
+                    src={imagePath('./logos_initial-05.jpg')}
+                    alt="Initial logos I created when the project was still named Mend."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+                <Img
+                    src={imagePath('./ButterLogos-Full.png')}
+                    alt="Finalized logo."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+            </Grid>
 
-            <GridWrapperDos>
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="SITE ARCHITECTURE &#38; TECH STACK"></SideTitle>
                 <PortfolioContainer>
 
@@ -189,13 +250,36 @@ const ButterPage = () => {
                     <P>
                         Keeping this in mind, the dev team opted to use TakeShape, a headless CMS. Originally we planned to use JAM stack to create the static marketing site using the recommended stack - Takeshape with GraphQL and React.js front-end, hosted via Nelify. However, after speaking with Scout’s Technology Director and TakeShape’s CEO and CTO about the needs our project, we decided to use HTML, SCCS, and Javascript(E6) for our front-end stack in order to simplify our process.
                 </P>
-                    <ImgSingle src={imagePath('./iaHomeFocusedv2_SS.jpg')}></ImgSingle>
 
-                    <ImgSingle src={imagePath('./site_map_final.jpg')}></ImgSingle>
+                    <Img
+                        src={imagePath('./iaHomeFocusedv2_SS.jpg')}
+                        alt="Image of a homepaged focused site map I created."
+                        caption=""
+                        width="47.375rem"
+                        height="37.375rem"
+                    />
+
+                    <Img
+                        src={imagePath('./site_map_final.jpg')}
+                        alt="Finalized site map."
+                        caption=""
+                        width="47.375rem"
+                        height="37.375rem"
+                    />
+                    
                 </PortfolioContainer>
-            </GridWrapperDos>
-        
-        <GridWrapperDos>
+            </Grid>
+
+
+
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="WIREFRAME&nbsp;EVOLUTION"></SideTitle>
 
                 <PortfolioContainer>
@@ -204,31 +288,70 @@ const ButterPage = () => {
                     </P>
 
                 </PortfolioContainer>
-
-        </GridWrapperDos>
-        
-
-
-            <GridPhotoFour 
-                src1={imagePath('./verticalScroll1_SS.jpg')}
-                alt1=""
-                src2={imagePath('./verticalScroll2_SS.jpg')}
-                alt2=""
-                src3={imagePath('./horrScroll1_SS.jpg')}
-                alt3=""
-                src4={imagePath('./horrScroll1_SS.jpg')}
-                alt4=""
-            />
+            </Grid>
+            
+            <Grid
+                numCol="4"
+                gapSize="0"
+                marginTop="4rem"
+                marginBottom="4rem"
+                marginLeft="4rem"
+                marginRight="4rem"
+            >
+                <Img
+                    src={imagePath('./verticalScroll1_SS.jpg')}
+                    alt="A desktop wireframe of the homepage showing a typical vertical scroll UX."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./verticalScroll2_SS.jpg')}
+                    alt="A continuation of a desktop wireframe of the homepage showing a typical vertical scroll UX."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./horrScroll1_SS.jpg')}
+                    alt="A desktop wireframe of the homepage showing a horrizontal scroll UX. Users would naviage through the homepage left to right like flipping through a page by scrolling up with their mouse or trackpad."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./horrScroll2_SS.jpg')}
+                    alt="A continuation of a desktop wireframe of the homepage showing a horrizontal scroll UX. Users would naviage through the homepage left to right like flipping through a page by scrolling up with their mouse or trackpad."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+            </Grid>
     
             <Arrow src={arrow}></Arrow>
 
-            <GridWrapper>
+            <Grid
+                numCol="3"
+                gapSize="5rem"
+                marginTop="0"
+                marginBottom="10rem"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <DesktopWireframe src={imagePath('./Butter_desktop_wireframe.png')}></DesktopWireframe>
                 <TabletWireframe src={imagePath('./Butter_Tablet.png')}></TabletWireframe>
                 <MobileWireframe src={imagePath('./Butter_Mobile.png')}></MobileWireframe>
-            </GridWrapper>
 
-                <GridWrapperDos>
+            </Grid>
+
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="STYLE TILES"></SideTitle>
 
                 <PortfolioContainer>
@@ -236,35 +359,93 @@ const ButterPage = () => {
                         Design deliverables consisting of fonts, colors and interface elements that communicate the essence of the visual brand.
                     </P>
                 </PortfolioContainer>
-
-                </GridWrapperDos>
             
+            </Grid>
+        
+            <Grid
+                numCol="4"
+                gapSize="0"
+                marginTop="4rem"
+                marginBottom="4rem"
+                marginLeft="4rem"
+                marginRight="4rem"
+            >
+                <Img
+                    src={imagePath('./style_tile_1.jpg')}
+                    alt="UI snapshot of a possible homepage direction. More illustration focused."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./style_tile_2.jpg')}
+                    alt="UI snapshot of a possible homepage direction. More illustration focused."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./style_tile_3.png')}
+                    alt="UI snapshot of a possible contact page direction. More illustration focused."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./style_tile_4.png')}
+                    alt="UI snapshot of a possible contact page direction. More illustration focused."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+            </Grid>
 
+            <Grid
+                numCol="4"
+                gapSize="0"
+                marginTop="4rem"
+                marginBottom="4rem"
+                marginLeft="4rem"
+                marginRight="4rem"
+            >
+                <Img
+                    src={imagePath('./style_tile_5.png')}
+                    alt="UI snapshot of a possible homepage direction. Mix of images inside of organic shapes."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./style_tile_6.png')}
+                    alt="UI snapshot of a possible homepage direction with a strict grid."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./style_tile_7.png')}
+                    alt="UI snapshot of a possible contact page direction. Mix of images inside of organic shapes."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+                <Img
+                    src={imagePath('./style_tile_8.png')}
+                    alt="UI snapshot of a possible contact page direction with defined shapes for text and image containers."
+                    caption=""
+                    width="16.125rem"
+                    height="20.5rem"
+                />
+            </Grid>
 
-            <GridPhotoFour
-                src1={imagePath('./style_tile_1.jpg')}
-                alt1=""
-                src2={imagePath('./style_tile_2.jpg')}
-                alt2=""
-                src3={imagePath('./style_tile_3.png')}
-                alt3=""
-                src4={imagePath('./style_tile_4.png')}
-                alt4=""
-            />
-
-
-            <GridPhotoFour
-                src1={imagePath('./style_tile_5.png')}
-                alt1=""
-                src2={imagePath('./style_tile_6.png')}
-                alt2=""
-                src3={imagePath('./style_tile_7.png')}
-                alt3=""
-                src4={imagePath('./style_tile_8.png')}
-                alt4=""
-            />
-
-            <GridWrapperDos>
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="FINAL PRODUCT"></SideTitle>
                 <PortfolioContainer>
                     <P>
@@ -272,63 +453,148 @@ const ButterPage = () => {
                 </P>
                 </PortfolioContainer>
 
-            </GridWrapperDos>
+            </Grid>
              
-           
-                    
-                <ImgLarge src={imagePath('./Butter_Screens_Nashville.png')}></ImgLarge>
-            
-            <GridPhotoTwo
-                src1={imagePath('./About_Page.png')}
-                alt1=""
-                src2={imagePath('./About_Page2.png')}
-                alt2=""
-            />
 
-            <GridPhotoTwo
-                src1={imagePath('./Home_Page.png')}
-                alt1=""
-                src2={imagePath('./HomePage041.png')}
-                alt2=""
-            />
+               <Center>
+                    <Img
+                        src={imagePath('./Butter_Screens_Nashville.png')}
+                        alt="Screenshot from the about page on the live site."
+                        caption=""
+                        width="1008px"
+                        height="532px"
+                    />
 
-            <GridWrapperDos>
+               </Center>
+   
+    
+    
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="5rem"
+                marginBottom="5rem"
+                marginLeft="5rem"
+                marginRight="5rem"
+            >
+                <Img
+                    src={imagePath('./About_Page.png')}
+                    alt="Screenshot from the about page on the live site."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+                <Img
+                    src={imagePath('./About_Page2.png')}
+                    alt="Another screenshot from the about page on the live site.."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+            </Grid>
+
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="5rem"
+                marginBottom="5rem"
+                marginLeft="5rem"
+                marginRight="5rem"
+            >
+                <Img
+                    src={imagePath('./Home_Page.png')}
+                    alt="Screenshot from the home page on the live site."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+                <Img
+                    src={imagePath('./HomePage041.png')}
+                    alt="Another screenshot from the home page on the live site.."
+                    caption=""
+                    width="32.125rem"
+                    height="19.25rem"
+                />
+            </Grid>
+
+
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></SideTitle>
                 <PortfolioContainer>
                     <StyledLink href="https://discoverbutter.co/">View the live site</StyledLink>
                 </PortfolioContainer>
-            </GridWrapperDos>
+            </Grid>
 
-                
-
-            <GridWrapperDos>
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="BRAND BOOK"></SideTitle>
                 <PortfolioContainer>
                     <P></P>
                 </PortfolioContainer>
+            </Grid>
 
-            </GridWrapperDos>
+
+            <Center>
+                <Img
+                    src={imagePath('./Butter_mockup.png')}
+                    alt="Mockup of the live site."
+                    caption=""
+                    width="63rem"
+                    height="33.25rem"
+                />
+            </Center>
         
-                
-            <ImgLarge src={imagePath('./Butter_mockup.png')}></ImgLarge>
 
-            <GridWrapperDos>
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <Spread src={imagePath('./ButterBrandbook01.png')}></Spread>
                 <Spread src={imagePath('./ButterBrandbook02.png')}></Spread>
-            </GridWrapperDos>
-
-            <GridWrapperDos>
+            </Grid>
+       
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <Spread src={imagePath('./ButterBrandbook03.png')}></Spread>
                 <Spread src={imagePath('./ButterBrandbook04.png')}></Spread>
-            </GridWrapperDos>
+            </Grid>
 
-            <GridWrapperDos>
+            <Grid
+                numCol="2"
+                gapSize="0"
+                marginTop="0"
+                marginBottom="0"
+                marginLeft="0"
+                marginRight="0"
+            >
                 <SideTitle title="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"></SideTitle>
                 <PortfolioContainer>
                     <StyledLink href={butterBrandBook} target="_blank">View Complete brand book</StyledLink>
                 </PortfolioContainer>
-            </GridWrapperDos>
-          
+            </Grid>
                
         </Layout>
     )

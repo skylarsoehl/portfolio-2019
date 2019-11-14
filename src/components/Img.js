@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 
 const ImgStyled = styled.img`
-    position: relative;
-    width: 350px;
-    height: 260px;
+    object-fit: contain;
+    width: ${props => `${props.width}`};
+    height: ${props => `${props.height}`};
 `;
 
 const CaptionStyled = styled.figcaption`
@@ -20,6 +20,8 @@ const Img = ({
     src,
     alt,
     caption,
+    width,
+    height,
     Img = ImgStyled,
     Caption = CaptionStyled
 }) => (
@@ -27,7 +29,9 @@ const Img = ({
         <figure>
                 <Img
                     src={src}
-                    alt={alt}>
+                    alt={alt}
+                    width={width}
+                    height={height}>
                 </Img>
 
                 <Caption>
