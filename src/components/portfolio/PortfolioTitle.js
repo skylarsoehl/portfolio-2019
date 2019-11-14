@@ -15,7 +15,7 @@ const SubtitleMiddleStyled = styled(H3)`
 
 const SubtitleBottomStyled = styled(H3)`
     margin-left: 10rem;
-    margin-bottom: 5.375rem;
+    margin-bottom: 2.375rem;
 `;
 
 const NameStyled = styled(H2)`
