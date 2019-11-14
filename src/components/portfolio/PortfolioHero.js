@@ -20,6 +20,8 @@ const WrapperStyled = styled.div`
     bottom: 14.46%;
     background-image: ${props => `url(${props.background})`};
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   }
 
 `;

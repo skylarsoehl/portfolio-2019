@@ -6,6 +6,7 @@ const ImgStyled = styled.img`
     object-fit: contain;
     width: ${props => `${props.width}`};
     height: ${props => `${props.height}`};
+    border: ${props => `${props.border}`};
 `;
 
 const CaptionStyled = styled.figcaption`
@@ -22,6 +23,7 @@ const Img = ({
     caption,
     width,
     height,
+    border,
     Img = ImgStyled,
     Caption = CaptionStyled
 }) => (
@@ -31,7 +33,8 @@ const Img = ({
                     src={src}
                     alt={alt}
                     width={width}
-                    height={height}>
+                    height={height}
+                    border= {border}>
                 </Img>
 
                 <Caption>
