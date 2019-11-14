@@ -1,7 +1,5 @@
 import React from 'react'
 import Layout from '../../components/layout'
-import styled from 'styled-components'
-import Center from '../../elements/Center'
 import PortfolioContainer from '../../elements/portfolio/PortfolioContainer'
 import PortfolioHero from '../../components/portfolio/PortfolioHero'
 import Overview from '../../components/portfolio/Overview'
@@ -10,7 +8,7 @@ import Grid from '../../components/portfolio/Grid'
 import Img from '../../components/Img'
 import CatRoleDate from '../../components/portfolio/CatRoleDate'
 import P from '../../elements/P'
-import A from '../../elements/A'
+
 
 const images = require.context('../../images/portfolio/NUWIT', true)
 const imagePath = name => images(name, true)
