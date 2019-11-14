@@ -19,11 +19,13 @@ const BlurbStyled = styled.p`
 const Wrapper = styled.div`
     margin-top: 5rem;
     margin-bottom: 15rem;
+    margin-left: 10rem;
+    margin-right: 15rem;
 `;
 
 const Container = styled(ColItem2)`
   display: flex;
-  width: 94vw;
+  width: 85vw;
   height: auto;
   box-sizing: border-box;
   margin: 0 auto;

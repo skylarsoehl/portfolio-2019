@@ -6,7 +6,7 @@ const SideTitleStyled = styled.div`
     padding-left: 7.3125rem;
     margin-left: 2rem;
     margin-right: 1.8125rem;
-    width: 20.1vw;
+    width: 16.1vw;
     font-weight: 500;
     text-align: right;
 `;

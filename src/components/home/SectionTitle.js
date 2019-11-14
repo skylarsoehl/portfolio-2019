@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import H2 from '../../elements/H2';
 import ColItem2 from '../../elements/ColItem2';
-import ColItem1 from '../../elements/ColItem1';
 
 
 const StyledMiddle = styled(H2)`
-    margin-left: 22rem;
+    margin-left: -12rem;
+
 `;
 
 const StyledSmall = styled.span`
-    font-size: 72px;
+    font-size: 4.5rem;
     margin-left: 3rem;
 `;
 
@@ -28,13 +28,7 @@ const SectionTitle = ({
         <>
             <ColItem2>
                 <TitleTop>{titleTop}</TitleTop>
-            </ColItem2>
-
-            <ColItem1>
                 <TitleMiddle>{titleMiddle}</TitleMiddle>
-            </ColItem1>
-
-            <ColItem2>
                 <TitleBottom>{titleBottom}
                     <SmallTitle>{smallTitle}</SmallTitle>
                 </TitleBottom>
@@ -42,4 +36,4 @@ const SectionTitle = ({
         </>
     );
 
-export default SectionTitle;
+export default SectionTitle;;

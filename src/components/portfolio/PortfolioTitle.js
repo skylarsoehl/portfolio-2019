@@ -19,7 +19,7 @@ const SubtitleBottomStyled = styled(H3)`
 `;
 
 const NameStyled = styled(H2)`
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     margin-left: 5rem;
 `;
 
