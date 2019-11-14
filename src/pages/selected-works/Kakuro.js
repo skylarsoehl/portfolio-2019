@@ -1,16 +1,26 @@
 import React from 'react'
 import Layout from '../../components/layout'
-import PortfolioContainer from '../../elements/portfolio/PortfolioContainer'
+import styled from 'styled-components'
+import Center from '../../elements/Center'
 import PortfolioHero from '../../components/portfolio/PortfolioHero'
 import Overview from '../../components/portfolio/Overview'
 import SideTitle from '../../components/SideTitle'
 import Grid from '../../components/portfolio/Grid'
 import Img from '../../components/Img'
 import CatRoleDate from '../../components/portfolio/CatRoleDate'
+import A from '../../elements/A'
 import P from '../../elements/P'
 
 const images = require.context('../../images/portfolio/Kakuro', true)
 const imagePath = name => images(name, true)
+
+
+const StyledLink = styled(A)`
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+`;
 
 const KakuroPage = () => {
     return (
@@ -45,18 +55,45 @@ const KakuroPage = () => {
                 marginLeft="0"
                 marginRight="0"
             >
-                <SideTitle title="STEPPING INTO THE ROLE"></SideTitle>
-                <PortfolioContainer>
-
-                    <P>
-                        At our very first internal meeting, the e-board and I created a list of action items and goals for the year. My to-dos included creating recruitment materials, event collateral, merchandise designs, and a design system for the organization. As for my goal, I first aimed to increase user engagement on our social media, peak interest for our social events, and retain members (new and old) through these tasks.
-                </P>
-                    <P>
-                        Secondly, I planned to spend time developing NUWIT’s brand and creating an official design system + brand book that could be used by future design and web chairs. After spending a semester working as a developer for Scout, I was inspired to create something similar (albeit more simple) for NUWIT. As we continue to grow, having a guidelines to inform future design-related activities will be important for distinguishing and promoting the organization.
-                </P>
-
-                </PortfolioContainer>
+                <SideTitle title="SCREENS"></SideTitle>
+                <Img
+                    src={imagePath('./kakmockup.png')}
+                    alt="Mockup of the live game in action"
+                    caption=""
+                    width="63.375rem"
+                    height="42.25rem"
+                />
             </Grid>
+
+            <Center>
+                <Img
+                    src={imagePath('./kakuro1.png')}
+                    alt="User Journey Explorations"
+                    caption=""
+                    width="63rem"
+                    height="33.25rem"
+                />
+                <Img
+                    src={imagePath('./kakuro2.png')}
+                    alt="Mood Boards"
+                    caption=""
+                    width="63rem"
+                    height="33.25rem"
+                />
+                <Img
+                    src={imagePath('./kakuro3.png')}
+                    alt="Personality Levers"
+                    caption=""
+                    width="63rem"
+                    height="33.25rem"
+                />
+                <P>
+                    <StyledLink href="https://github.com/skylarsoehl/KakuroPuzzle" target="_blank">View Github Repository</StyledLink>
+                </P>
+               
+            </Center>
+
+    
 
         </Layout>
     )
