@@ -1,11 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "gatsby"
 import './layout.scss';
 import * as theEnd from '../images/the-end.svg'
+import { COLORS } from '../tokens';
 
 const SiteContainer = styled.div`
     margin: 57px;
     font-family: neue-haas-unica, sans-serif;
+`;
+
+const LinkTitle = styled(Link)`
+    text-decoration: none;
+    color: black;
+    transition: color 250ms ease-in-out;
+    &:hover,
+  &:focus {
+    color: ${COLORS.RED};
+    text-decoration: none;
+  }
 `;
 
 const SiteTitle = styled.div`
@@ -26,7 +39,9 @@ const FooterImage = styled.img`
 const Layout = (props) => {
     return (
         <SiteContainer>
-            <SiteTitle>SKYLAR SOEHL</SiteTitle>
+            <LinkTitle to="/">
+                <SiteTitle>SKYLAR SOEHL</SiteTitle>
+            </LinkTitle>
             {props.children}
             <FooterImage src={theEnd} alt='This is the end of the page.'></FooterImage>
         </SiteContainer>
