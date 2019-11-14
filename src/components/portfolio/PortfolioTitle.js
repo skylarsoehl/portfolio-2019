@@ -6,8 +6,7 @@ import ColItem1 from '../../elements/ColItem1'
 
 
 const SubtitleTopStyled = styled(H3)`
-    padding-top: 3rem;
-    margin-left: 10rem;
+    margin-left: 10rem; 
 `;
 
 const SubtitleMiddleStyled = styled(H3)`
@@ -16,10 +15,11 @@ const SubtitleMiddleStyled = styled(H3)`
 
 const SubtitleBottomStyled = styled(H3)`
     margin-left: 10rem;
+    margin-bottom: 5.375rem;
 `;
 
 const NameStyled = styled(H2)`
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     margin-left: 5rem;
 `;
 
@@ -39,17 +39,11 @@ const PortfolioTitle = ({
         <>
             <ColItem1>
                 <SubtitleTop>{subtitleTop}</SubtitleTop>
-            </ColItem1>
-
-            <ColItem1>
+        
                 <SubtitleMiddle>{subtitleMiddle}</SubtitleMiddle>
-            </ColItem1>
-
-            <ColItem1>
+        
                 <SubtitleBottom>{subtitleBottom}</SubtitleBottom>
-            </ColItem1>
 
-            <ColItem1>
                 <Name>{name}</Name>
             </ColItem1>
         </>

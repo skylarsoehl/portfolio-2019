@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PortfolioContainer from '../../elements/PortfolioContainer'
-
-
+import ColItem2 from '../../elements/ColItem2'
 
 const SubtitleStyled = styled.p`
     font-weight: 500;
@@ -21,6 +19,17 @@ const BlurbStyled = styled.p`
 const Wrapper = styled.div`
     margin-top: 5rem;
     margin-bottom: 15rem;
+    margin-left: 10rem;
+    margin-right: 15rem;
+`;
+
+const Container = styled(ColItem2)`
+  display: flex;
+  width: 85vw;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  flex-wrap: wrap;
 `;
 
 
@@ -32,13 +41,13 @@ const Overview = ({
 }) => (
         <>
         <Wrapper>
-                <PortfolioContainer>
+                <Container>
                     <Subtitle>{subtitle}</Subtitle>
-                </PortfolioContainer>
+                </Container>
 
-                <PortfolioContainer>
+                <Container>
                     <Blurb>{blurb}</Blurb>
-                </PortfolioContainer>
+                </Container>
 
         </Wrapper>
         </>
