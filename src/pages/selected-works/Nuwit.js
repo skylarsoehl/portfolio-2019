@@ -91,7 +91,7 @@ const NuwitPage = () => {
             >
                 <Img
                     src={imagePath('./logo_old.png')}
-                    alt="Final color decisions are (from left to right): white, soft salmon pink, terracotta brown, dark blue-green, and light sage green."
+                    alt=""
                     caption="Old logo"
                     width="38.125rem"
                     height="19.25rem"
@@ -99,7 +99,7 @@ const NuwitPage = () => {
                 />
                 <Img
                     src={imagePath('./logo_update_2019_updated_teal.png')}
-                    alt="This image shows a type pairing for clients chosen fonts showing what the type would look like for the title, subtitle, and body text."
+                    alt=""
                     caption="Updated logo"
                     width="38.125rem"
                     height="19.25rem"
@@ -267,14 +267,14 @@ const NuwitPage = () => {
                 />
                 <Img
                     src={imagePath('./welcome_dinner_reg_2.png')}
-                    alt="Mood Boards"
+                    alt=""
                     caption=""
                     width="22.5rem"
                     height="14.4375rem"
                 />
                 <Img
                     src={imagePath('./datadog_qa_facebook.png')}
-                    alt="Personality Levers"
+                    alt=""
                     caption=""
                     width="22.5rem"
                     height="14.4375rem"
@@ -298,14 +298,14 @@ const NuwitPage = () => {
                 />
                 <Img
                     src={imagePath('./power-advocate_facebook.png')}
-                    alt="Mood Boards"
+                    alt=""
                     caption=""
                     width="22.5rem"
                     height="14.4375rem"
                 />
                 <Img
                     src={imagePath('./NUWITxMULTI_facebook.png')}
-                    alt="Personality Levers"
+                    alt=""
                     caption=""
                     width="22.5rem"
                     height="14.4375rem"
