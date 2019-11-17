@@ -96,7 +96,7 @@ const Bio = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/ssoehl.design/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/skys.design/" target="_blank" rel="noopener noreferrer">
                             <Icon src={igIcon} />
                         </a>
                     </li>
