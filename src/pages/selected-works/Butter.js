@@ -23,6 +23,7 @@ const Spread = styled.img`
   width: 562px;
   height: 190px;
   object-fit: contain;
+  margin-bottom: 5rem;
 `;
 
 const DesktopWireframe = styled.img`
@@ -398,16 +399,6 @@ const ButterPage = () => {
                     width="16.125rem"
                     height="20.5rem"
                 />
-            </Grid>
-
-            <Grid
-                numCol="4"
-                gapSize="0"
-                marginTop="4rem"
-                marginBottom="4rem"
-                marginLeft="4rem"
-                marginRight="4rem"
-            >
                 <Img
                     src={imagePath('./style_tile_5.png')}
                     alt="UI snapshot of a possible homepage direction. Mix of images inside of organic shapes."
@@ -437,6 +428,8 @@ const ButterPage = () => {
                     height="20.5rem"
                 />
             </Grid>
+
+          
 
             <Grid
                 numCol="2"
@@ -473,7 +466,7 @@ const ButterPage = () => {
                 numCol="2"
                 gapSize="0"
                 marginTop="5rem"
-                marginBottom="5rem"
+                marginBottom="7rem"
                 marginLeft="5rem"
                 marginRight="5rem"
             >
@@ -491,16 +484,6 @@ const ButterPage = () => {
                     width="32.125rem"
                     height="19.25rem"
                 />
-            </Grid>
-
-            <Grid
-                numCol="2"
-                gapSize="0"
-                marginTop="5rem"
-                marginBottom="5rem"
-                marginLeft="5rem"
-                marginRight="5rem"
-            >
                 <Img
                     src={imagePath('./Home_Page.png')}
                     alt="Screenshot from the home page on the live site."
@@ -517,6 +500,7 @@ const ButterPage = () => {
                 />
             </Grid>
 
+       
 
             <Grid
                 numCol="2"
@@ -568,19 +552,10 @@ const ButterPage = () => {
             >
                 <Spread src={imagePath('./ButterBrandbook01.png')}></Spread>
                 <Spread src={imagePath('./ButterBrandbook02.png')}></Spread>
-            </Grid>
-       
-            <Grid
-                numCol="2"
-                gapSize="0"
-                marginTop="0"
-                marginBottom="0"
-                marginLeft="0"
-                marginRight="0"
-            >
                 <Spread src={imagePath('./ButterBrandbook03.png')}></Spread>
                 <Spread src={imagePath('./ButterBrandbook04.png')}></Spread>
             </Grid>
+       
 
             <Grid
                 numCol="2"
