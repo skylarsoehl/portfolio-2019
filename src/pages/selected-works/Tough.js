@@ -1,5 +1,4 @@
 import React from 'react'
-import Center from '../../elements/Center'
 import Layout from '../../components/layout'
 import PortfolioContainer from '../../elements/portfolio/PortfolioContainer'
 import PortfolioHero from '../../components/portfolio/PortfolioHero'
