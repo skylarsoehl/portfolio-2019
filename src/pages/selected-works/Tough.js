@@ -158,28 +158,28 @@ const ToughPage = () => {
                 marginRight="5rem"
             >
                 <Img
-                    src={imagePath('./thirty-1.jpg')}
+                    src={imagePath('./thirty-1.png')}
                     alt=""
                     caption=""
                     width="32.125rem"
                     height="19.25rem"
                 />
                 <Img
-                    src={imagePath('./thirty-2.jpg')}
+                    src={imagePath('./thirty-2.png')}
                     alt=""
                     caption=""
                     width="32.125rem"
                     height="19.25rem"
                 />
                 <Img
-                    src={imagePath('./thirty-3.jpg')}
+                    src={imagePath('./thirty-3.png')}
                     alt=""
                     caption=""
                     width="32.125rem"
                     height="19.25rem"
                 />
                 <Img
-                    src={imagePath('./thirty-4.jpg')}
+                    src={imagePath('./thirty-4.png')}
                     alt=""
                     caption=""
                     width="32.125rem"
