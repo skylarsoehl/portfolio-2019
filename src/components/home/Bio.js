@@ -11,7 +11,7 @@ import * as githubIcon from '../../images/social-icons/github.svg'
 import * as igIcon from '../../images/social-icons/instagram.svg'
 import * as linkedInIcon from '../../images/social-icons/linkedIn.svg'
 import * as dribbleIcon from '../../images/social-icons/dribble.svg'
-import * as resume from '../../documents/skylar_soehl_resume.pdf'
+import * as resume from '../../documents/resume2020.pdf'
 import Container from "../../elements/Container"
 
 const SocialLinks = styled.ul`
